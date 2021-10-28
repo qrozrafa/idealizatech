@@ -62,3 +62,24 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+// SCROLL REVEAL ANIMATION
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+    reset: true,
+})
+
+sr.reveal('.home__data, .home__social-link, .home__info, .section__title, .contrata__title, .contrata__description,  .footer', {
+    origin: 'top',
+    interval: 100,
+})
+
+sr.reveal('.sobre__data, .card__aplicacao, .card__suporte, .container__contrata',{
+    origin: 'left',
+})
+
+sr.reveal('.sobre__img-overlay, .card__metodo, .card__responsivo,  .video__content, .inscreva__form',{
+    origin:'right',
+    interval: 100,
+})

@@ -16,8 +16,8 @@
     --input-color: #a4b0be;
     --body-color: #2f3542;
     --white-color: #fff;
-    --scrool-bar-color:#a4b0be;
-    --scrool-thumb-color: #a4b0be;
+    --scrool-bar-color:#000;
+    --scrool-thumb-color: rgb(75, 73, 73);
 
     /*========Font e Tipografia==========*/
     --body-font: 'Open Sans', sans-serif;
@@ -703,6 +703,17 @@ textarea{
 
 .footer__terms-link:hover{
     color: var(--text-color);
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: var(--first-color-second);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.527), rgba(255, 255, 0, 0.603)) padding-box;
+    border-radius: 8px;
 }
 
 /* ====== SCROLL UP ====== */

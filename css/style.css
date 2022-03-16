@@ -572,69 +572,53 @@ hr{
 }
 
 /* CONTRATA */
-.contrata__bg{
-    background: var(--first-color-second);
-    padding: 2.5rem 0;
-}
-
-.contrata__title,
-.contrata__description{
-    color: var(--white-color);
-    padding-top: 12px;
-}
-
-.contrata__description{
+.title{
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: var(--mb-2-5);
+    background:-webkit-linear-gradient(top left, rgba(255, 1, 1, 1.0), rgba(252, 255, 21, 1.0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 8px;
 }
 
-.contrata__form{
-    padding: .5rem;
-    display: flex;
-    flex-flow: column nowrap;
+.box-forms{
+    width: 100%;
+    margin-bottom: 32px;
 }
 
-.contrata__msg{
-    width: 70%;
-    margin-left: 4.6rem;
-    display: flex;
-    flex-flow: column nowrap;
-    color: var(--white-color);
+.forms{
+    background-color: #ffffff !important;
+    padding: 15px !important;
+    text-align: center;
 }
 
-.contrata__input{
-    width: 70%;;
-    padding: .5rem;
-    margin-bottom: var(--mb-1);
-    margin-left: 4.6rem;
-    background: 
-    linear-gradient(var(--white-color), var(--white-color)) padding-box,
-    linear-gradient(to right, red, yellow) border-box;
-    border-radius: 64px 4px;
-    border: 2px solid transparent;
+.forms > p {
+    color: #7c7c7c;
+    text-align: center;
+    margin-bottom: 12px;
 }
 
-.contrata__input::placeholder{
-    color: var(--text-color);
-    padding-left: var(--mb-0-75);
+.cognito{
+    height: 400px !important;
+    overflow: hidden;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
-.button__contrata{
-    margin-top: var(--mb-1);
-    margin-right: 6rem;
-    align-self: end;
-    width: 26%;
-}
-
-textarea{
-    resize: none;
-    background: 
-    linear-gradient(var(--white-color), var(--white-color)) padding-box,
-    linear-gradient(to right, red, yellow) border-box;
-    border-radius: 18px;
-    border: 2px solid transparent;
-    padding: 20px;
-}
 
 
 /* FOOTER */
@@ -753,7 +737,60 @@ textarea{
     .home__info{
         width: 80%;
         padding: 1rem;
-    }   
+    }
+
+    .contrata__input{
+        margin-left: 2.8rem;
+    }
+
+    .contrata__msg{
+        width: 70%;
+        margin-left: 2.8rem;
+    }
+
+    .button__contrata{
+        margin-top: var(--mb-1);
+        margin-right: 2.6rem;
+        align-self: end;
+        width: 35%;
+    }
+    .slides, .slide, .slide__controls, .home-info-slides{
+        visibility: hidden;
+        background: none;
+    }
+
+    .home__social{
+        display: flex;
+        flex-direction: row;
+        row-gap: 1.5rem;
+    }
+    
+    .home__social-link{
+        font-size: 1.2rem;
+        width: max-content;
+        margin: 8px;
+    }
+
+
+}
+
+@media(max-width: 425px){
+    .slides, .slide, .slide__controls, .home-info-slides{
+        visibility: hidden;
+        background: none;
+    }
+
+    .home__social{
+        display: flex;
+        flex-direction: row;
+        row-gap: 1.5rem;
+    }
+    
+    .home__social-link{
+        font-size: 1.2rem;
+        width: max-content;
+        margin: 8px;
+    }
 }
 
 /* for medium devices */
@@ -762,6 +799,9 @@ textarea{
         width: 600px;
         margin: 0 auto;
     }
+    
+
+    
 }
 
 @media screen and (min-width:768px) {
@@ -780,8 +820,8 @@ textarea{
         display: flex;
     }    
     .nav__item{
-        margin-left: 5rem;
-        margin-right: 1rem;
+        margin-left: 0rem;
+        margin-right: 6rem;
         margin-bottom: 0;
         
     }

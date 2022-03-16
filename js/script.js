@@ -70,16 +70,16 @@ const sr = ScrollReveal({
     reset: true,
 })
 
-sr.reveal('.home__data, .home__social-link, .home__info, .section__title, .contrata__title, .contrata__description,  .footer', {
+sr.reveal('.home__data, .home__social-link, .home__info, .section__title, .title,  .footer', {
     origin: 'top',
     interval: 100,
 })
 
-sr.reveal('.sobre__data, .card__aplicacao, .card__suporte, .container__contrata',{
+sr.reveal('.sobre__data, .card__aplicacao, .card__suporte, .box-forms',{
     origin: 'left',
 })
 
-sr.reveal('.sobre__img-overlay, .card__metodo, .card__responsivo,  .video__content, .inscreva__form',{
+sr.reveal('.sobre__img-overlay, .card__metodo, .card__responsivo,  .video__content, .cognito',{
     origin:'right',
     interval: 100,
 })

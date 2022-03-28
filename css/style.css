@@ -440,6 +440,10 @@ input{
 }
 
 /* SOBRE */
+#sobre{
+    margin-bottom: 108px;
+}
+
 .sobre__data{
     text-align: center;
 }
@@ -485,7 +489,11 @@ input{
 #servicos{
     width: 100%;
     padding: 70px 0;
-    background-color: var(--white-color);
+    background-color: var(--first-color-second);
+}
+
+.title-servicos{
+    color: aliceblue;
 }
 
 .servicos__box{
@@ -622,6 +630,10 @@ hr{
 
 
 /* FOOTER */
+.footer{
+    background-color: var(--first-color-second);
+}
+
 .footer__container{
     row-gap: 5rem;
 }
@@ -646,7 +658,7 @@ hr{
 
 .footer__social{
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: var(--first-color-alt);
     margin-right: var(--mb-1-25);
 }
 
@@ -658,12 +670,16 @@ hr{
     margin-bottom: var(--mb-0-75);
 }
 
+.footer__description, .footer__subtitle{
+    color: var(--first-color-alt);
+}
+
 .footer__link{
-    color: var(--text-color);
+    color: var(--input-color);
 }
 
 .footer__link:hover{
-    color: var(--input-color);
+    color: var(--first-color-alt);
 }
 
 .footer__rights{
@@ -676,7 +692,7 @@ hr{
 .footer__copy,
 .footer__terms-link{
     font-size: var(--small-font-size);
-    color: var(--text-color-light);
+    color: var(--first-color-alt);
 }
 
 .footer__terms{
@@ -686,7 +702,7 @@ hr{
 }
 
 .footer__terms-link:hover{
-    color: var(--text-color);
+    color: var(--first-color-alt);
 }
 
 /* SCROLL BAR */
